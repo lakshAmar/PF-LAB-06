@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+    int total = 0;
+
+    printf("Enter number of boxes: ");
+    scanf("%d", &n);
+
+    for(int i = 1; i <= n; i++) {
+        total += i;
+    }
+
+    printf("Total decorative items required: %d\n", total);
+
+    return 0;
+}
