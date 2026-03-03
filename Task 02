@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    float balance = 5000, withdraw;
+
+    while(balance > 0) {
+        printf("Current Balance: %.2f\n", balance);
+        printf("Enter withdrawal amount: ");
+        scanf("%f", &withdraw);
+
+        balance -= withdraw;
+    }
+
+    printf("Balance exhausted.\n");
+
+    return 0;
+}
