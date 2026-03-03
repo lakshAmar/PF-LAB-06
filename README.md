@@ -1,5 +1,5 @@
 # PF-LAB-06
-**Name: Laksh Amar Talreja\n**
+**Name: Laksh Amar Talreja**
 **Roll No: 25K-6504**
 ## Lab Objectives
 The objective of this lab is to understand and implement different looping structures in 
