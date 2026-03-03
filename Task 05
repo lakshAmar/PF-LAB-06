@@ -1,0 +1,24 @@
+ #include <stdio.h>
+
+int main() {
+    float temp, sum = 0;
+    int count = 0;
+
+    printf("Enter temperature (-999 to stop): ");
+    scanf("%f", &temp);
+
+    while(temp != -999) {
+        sum += temp;
+        count++;
+
+        printf("Enter temperature (-999 to stop): ");
+        scanf("%f", &temp);
+    }
+
+    if(count > 0)
+        printf("Average Temperature: %.2f\n", sum / count);
+    else
+        printf("No data entered.\n");
+
+    return 0;
+}
