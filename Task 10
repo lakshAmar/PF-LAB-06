@@ -1,0 +1,27 @@
+ #include <stdio.h>
+int main() {
+    int score;
+    int distinction = 0, pass = 0, fail = 0;
+
+    printf("Enter score (-1 to stop): ");
+    scanf("%d", &score);
+
+    while(score != -1) {
+
+        if(score >= 75)
+            distinction++;
+        else if(score >= 50)
+            pass++;
+        else
+            fail++;
+
+        printf("Enter score (-1 to stop): ");
+        scanf("%d", &score);
+    }
+
+    printf("Distinction: %d\n", distinction);
+    printf("Pass: %d\n", pass);
+    printf("Fail: %d\n", fail);
+
+    return 0;
+}
